@@ -1,0 +1,13 @@
+class Employee:
+    def __init__(self, name, age, salary):
+        self.name = name  # Имя сотрудника
+        self.age = age    # Возраст сотрудника
+        self.salary = salary  # Зарплата сотрудника
+
+# Создание объекта класса Employee
+employee = Employee(name="Алексей", age=30, salary=75000)
+
+# Получение данных из свойств и вывод их на экран
+print(f"Имя: {employee.name}")
+print(f"Возраст: {employee.age} лет")
+print(f"Зарплата: {employee.salary} руб.")

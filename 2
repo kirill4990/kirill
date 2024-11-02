@@ -1,0 +1,20 @@
+class Employee:
+    def __init__(self, first_name, last_name, position, salary):
+        self.first_name = first_name  # Имя сотрудника
+        self.last_name = last_name      # Фамилия сотрудника
+        self.position = position        # Должность
+        self.salary = salary            # Зарплата
+
+    def display_info(self):
+        """Выводит информацию о сотруднике."""
+        info = (f"Имя: {self.first_name}\n"
+                f"Фамилия: {self.last_name}\n"
+                f"Должность: {self.position}\n"
+                f"Зарплата: {self.salary} руб.")
+        print(info)
+
+# Создание объекта класса Employee
+employee = Employee(first_name="Кирилл", last_name="Черемхин", position="Администратор баз данных", salary=60000)
+
+# Вызов метода для вывода информации о сотруднике
+employee.display_info()

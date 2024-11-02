@@ -1,0 +1,27 @@
+class Car:
+    def __init__(self, brand, model, year, color, mileage, engine_type, transmission):
+        self.brand = brand          # марка автомобиля
+        self.model = model          # модель автомобиля
+        self.year = year            # год выпуска
+        self.color = color          # цвет автомобиля
+        self.mileage = mileage      # пробег автомобиля
+        self.engine_type = engine_type  # тип двигателя
+        self.transmission = transmission  # тип коробки передач
+
+    def display_info(self):
+        """Выводит информацию о автомобиле."""
+        info = (f"Марка: {self.brand}\n"
+                f"Модель: {self.model}\n"
+                f"Год выпуска: {self.year}\n"
+                f"Цвет: {self.color}\n"
+                f"Пробег: {self.mileage} км\n"
+                f"Тип двигателя: {self.engine_type}\n"
+                f"Коробка передач: {self.transmission}")
+        print(info)
+
+# Создание объекта класса Car с новыми свойствами
+my_car = Car(brand="Toyota", model="Camry", year=2021, color="Синий", mileage=15000, 
+             engine_type="Бензиновый", transmission="Автомат")
+
+# Вызов метода для вывода информации о машине
+my_car.display_info()
